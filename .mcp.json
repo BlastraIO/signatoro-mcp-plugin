@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "signatoro": {
+      "type": "http",
+      "url": "https://signatoro.com/mcp"
+    }
+  }
+}
