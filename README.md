@@ -1,18 +1,21 @@
 # Signatoro
 
-The same email signature on every email you send: from every mail app, on every device, and from every AI agent that sends on your behalf.
+The agentic email signature platform: one source of truth for the email signature your people and your AI agents send.
 
-This plugin connects Cursor, Grok Bot and Grok Build to the Signatoro MCP server at `https://signatoro.com/mcp`.
+This plugin connects Codex, Cursor, Grok Bot and Grok Build to the Signatoro MCP server at `https://signatoro.com/mcp`. Every plan includes the MCP server and API, Free too.
 
 ## What you get
 
 - **Agents that send as you** fetch your saved signature before each email, always the latest version.
-- **Agents with their own mailbox** join your company like a colleague and get their own signature in your company's style, with the same compliance footnote as everyone else, such as a confidentiality notice or a registered-office line. They count as members of your flat-price plan.
+- **Each agent signs as itself.** Several agents sending for you each get their own signature: yours with a line such as "Sent by Ada, my AI assistant", or the agent's own name and role. A connection made for one agent always signs as that agent.
+- **Every agent you switch to** fetches the same saved signature, so one edit reaches all of them.
+- **Company AI agents** sign with your company's brand and compliance footnote, and use no seat.
 - **One API for every sender.** Your CRM, sequencer and help desk read the same signatures, so one edit reaches all of them. Connect Zoho Mail once and changes reach it by itself.
 
 ## Install
 
 - **Cursor:** install **Signatoro** from the Cursor Marketplace.
+- **Codex:** add this repository as a plugin; the manifest is `.codex-plugin/plugin.json`.
 - **Grok Build:** open `/plugins`, find **signatoro** in the Marketplace tab, and install it.
 
 Three tools work right away. For the rest, the first call opens your browser to sign in to Signatoro. There is no API key to paste.

@@ -1,0 +1,40 @@
+{
+  "name": "signatoro",
+  "version": "1.1.0",
+  "description": "The agentic email signature platform: one source of truth for the email signature your people and your AI agents send.",
+  "author": {
+    "name": "SecOne Inc",
+    "email": "support@signatoro.com",
+    "url": "https://signatoro.com"
+  },
+  "homepage": "https://signatoro.com",
+  "repository": "https://github.com/BlastraIO/signatoro-mcp-plugin",
+  "license": "MIT",
+  "keywords": ["signatoro", "email signature", "email", "mcp", "ai agents"],
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Signatoro",
+    "shortDescription": "The email signature your people and AI agents send",
+    "longDescription": "Signatoro is one source of truth for the email signature your people and your AI agents send. Before Codex sends or drafts an email for you, it fetches the signature you saved on Signatoro and appends it, so one edit reaches every agent you use or switch to. Each AI agent can sign with a signature of its own, and a company keeps one brand across its people and its agents. Without signing in, make a signature from your name and details and get the install steps for your mail app. Every plan includes the MCP server and API, Free too.",
+    "developerName": "SecOne Inc",
+    "category": "Productivity",
+    "capabilities": [
+      "Fetch your saved signature before every email an agent sends",
+      "A signature of its own for each AI agent",
+      "One brand for a company's people and agents",
+      "Make an email signature from your name and details",
+      "Install steps for Gmail, Outlook, Apple Mail and 25+ other apps"
+    ],
+    "websiteURL": "https://signatoro.com",
+    "supportURL": "https://signatoro.com/contact",
+    "privacyPolicyURL": "https://signatoro.com/privacy-policy",
+    "termsOfServiceURL": "https://signatoro.com/terms-of-service",
+    "defaultPrompt": [
+      "Add my Signatoro signature to this email",
+      "Make me an email signature",
+      "Which signatures do my AI agents use?"
+    ],
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png"
+  }
+}
