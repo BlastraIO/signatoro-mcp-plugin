@@ -1,7 +1,7 @@
 {
   "name": "signatoro",
-  "version": "1.1.0",
-  "description": "The agentic email signature platform: one source of truth for the email signature your people and your AI agents send.",
+  "version": "1.2.0",
+  "description": "One email signature for humans and AI agents. Signatoro is the agentic email signature platform: save your signature once, and your people and every AI agent you connect use the same one.",
   "author": {
     "name": "SecOne Inc",
     "email": "support@signatoro.com",
@@ -10,16 +10,20 @@
   "homepage": "https://signatoro.com",
   "repository": "https://github.com/BlastraIO/signatoro-mcp-plugin",
   "license": "MIT",
-  "keywords": ["signatoro", "email signature", "email", "mcp", "ai agents"],
+  "keywords": [
+    "signatoro",
+    "signatoro email signature",
+    "signatoro mcp"
+  ],
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Signatoro",
-    "shortDescription": "The email signature your people and AI agents send",
-    "longDescription": "Signatoro is one source of truth for the email signature your people and your AI agents send. Before Codex sends or drafts an email for you, it fetches the signature you saved on Signatoro and appends it, so one edit reaches every agent you use or switch to. Each AI agent can sign with a signature of its own, and a company keeps one brand across its people and its agents. Without signing in, make a signature from your name and details and get the install steps for your mail app. Every plan includes the MCP server and API, Free too.",
+    "shortDescription": "One email signature for humans and AI agents",
+    "longDescription": "Signatoro is the agentic email signature platform: save your signature once, and your people and every AI agent you connect use the same one. When you ask Codex to sign an email, or on every email once its instructions say so, it fetches the signature you saved on Signatoro and appends it, so one edit reaches every agent you use or switch to. Each AI agent can sign with a signature of its own, and a company keeps one brand across its people and its agents. Without signing in, make a signature from your name and details and get the install steps for your mail app. Every plan includes the MCP server and API, Free too.",
     "developerName": "SecOne Inc",
     "category": "Productivity",
     "capabilities": [
-      "Fetch your saved signature before every email an agent sends",
+      "Fetch your saved signature when an agent signs an email",
       "A signature of its own for each AI agent",
       "One brand for a company's people and agents",
       "Make an email signature from your name and details",
