@@ -1,7 +1,7 @@
 {
   "name": "signatoro",
-  "version": "1.1.0",
-  "description": "The same email signature on every email you and your AI agents send. Agents fetch it from one API, always the latest; agents with their own mailbox get your company brand and compliance footnote.",
+  "version": "1.2.0",
+  "description": "One email signature for humans and AI agents. Signatoro is the agentic email signature platform: save your signature once, and your people and every AI agent you connect use the same one.",
   "author": {
     "name": "Signatoro",
     "url": "https://signatoro.com"

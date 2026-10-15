@@ -1,12 +1,14 @@
 # Signatoro
 
-The agentic email signature platform: one source of truth for the email signature your people and your AI agents send.
+One email signature for humans and AI agents.
+
+Signatoro is the agentic email signature platform: save your signature once, and your people and every AI agent you connect use the same one.
 
 This plugin connects Codex, Cursor, Grok Bot and Grok Build to the Signatoro MCP server at `https://signatoro.com/mcp`. Every plan includes the MCP server and API, Free too.
 
 ## What you get
 
-- **Agents that send as you** fetch your saved signature before each email, always the latest version.
+- **Agents that send as you** fetch your saved signature when you ask them to sign, or on every email once their instructions say so, always the latest version.
 - **Each agent signs as itself.** Several agents sending for you each get their own signature: yours with a line such as "Sent by Ada, my AI assistant", or the agent's own name and role. A connection made for one agent always signs as that agent.
 - **Every agent you switch to** fetches the same saved signature, so one edit reaches all of them.
 - **Company AI agents** sign with your company's brand, their own name and role and an AI line, and use no seat.
@@ -14,11 +16,14 @@ This plugin connects Codex, Cursor, Grok Bot and Grok Build to the Signatoro MCP
 
 ## Install
 
+- **Grok Bot:** add **Signatoro** under Connect apps. To give each of your Bots its own signature, add an AI assistant on Signatoro for each Bot; the [Grok Bot guide](https://signatoro.com/docs/install-signature/agent/grok-bot) walks through it, including plus aliases of your `mail.grokbot.com` address.
 - **Cursor:** install **Signatoro** from the Cursor Marketplace.
-- **Codex:** the plugin manifest is `.codex-plugin/plugin.json`.
 - **Grok Build:** open `/plugins`, find **signatoro** in the Marketplace tab, and install it.
+- **Codex:** the plugin manifest is `.codex-plugin/plugin.json`.
 
 Three tools work right away. For the rest, the first call opens your browser to sign in to Signatoro. There is no API key to paste.
+
+To have an agent sign every email, add the [email signature rule](https://signatoro.com/docs/install-signature/agent#tell-your-agent-to-use-your-signature) to its instructions.
 
 ## Tools
 
@@ -30,7 +35,8 @@ Without signing in:
 
 Signed in:
 
-- `get_signature` - get your saved signature
+- `get_signature` - get your saved signature, with your sender details
+- `list_signatures` - list your signatures and your AI assistants' signatures
 - `update_my_signature` - save or change your signature
 
 Company owners:
@@ -38,7 +44,7 @@ Company owners:
 - `list_members` - list the people and agents in your company
 - `add_member` - add a person or an agent mailbox and send an invite
 - `update_member_field` - change a member's details
-- `remove_member` - remove a member
+- `remove_member` - remove a member, after you confirm
 - `resend_invite` - send an invite again
 
 ## What it connects to
@@ -47,7 +53,8 @@ One endpoint: `https://signatoro.com/mcp` (streamable HTTP). Sign-in uses OAuth,
 
 ## Docs and support
 
-- Guide: https://signatoro.com/docs/install-signature/agent/mcp
+- MCP guide: https://signatoro.com/docs/install-signature/agent/mcp
+- Grok Bot guide: https://signatoro.com/docs/install-signature/agent/grok-bot
 - Support: support@signatoro.com
 
 ## License
