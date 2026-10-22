@@ -4,7 +4,7 @@ One email signature for humans and AI agents.
 
 Signatoro is the agentic email signature platform: save your signature once, and your people and every AI agent you connect use the same one.
 
-This plugin connects Codex, Cursor, Grok Bot and Grok Build to the Signatoro MCP server at `https://signatoro.com/mcp`. Every plan includes the MCP server and API, Free too.
+This plugin connects Claude Code, Codex, Cursor, Grok Bot and Grok Build to the Signatoro MCP server at `https://signatoro.com/mcp`. Every plan includes the MCP server and API, Free too.
 
 ## What you get
 
@@ -17,6 +17,7 @@ This plugin connects Codex, Cursor, Grok Bot and Grok Build to the Signatoro MCP
 ## Install
 
 - **Grok Bot:** add **Signatoro** under Connect apps. To give each of your Bots its own signature, add an AI assistant on Signatoro for each Bot; the [Grok Bot guide](https://signatoro.com/docs/install-signature/agent/grok-bot) walks through it, including plus aliases of your `mail.grokbot.com` address.
+- **Claude Code:** run `/plugin install signatoro --marketplace BlastraIO/signatoro-mcp-plugin`.
 - **Cursor:** install **Signatoro** from the Cursor Marketplace.
 - **Grok Build:** open `/plugins`, find **signatoro** in the Marketplace tab, and install it.
 - **Codex:** the plugin manifest is `.codex-plugin/plugin.json`.
@@ -41,8 +42,8 @@ Signed in:
 
 Company owners:
 
-- `list_members` - list the people and agents in your company
-- `add_member` - add a person or an agent mailbox and send an invite
+- `list_members` - list the people in your company and their invitations
+- `add_member` - invite a person to your company
 - `update_member_field` - change a member's details
 - `remove_member` - remove a member, after you confirm
 - `resend_invite` - send an invite again
