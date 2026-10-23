@@ -10,7 +10,7 @@
       "name": "signatoro",
       "source": "./",
       "description": "One email signature for humans and AI agents. Signatoro is the agentic email signature platform: save your signature once, and your people and every AI agent you connect use the same one.",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "homepage": "https://signatoro.com",
       "category": "productivity"
     }
