@@ -24,7 +24,7 @@ This plugin connects Claude Code, Codex, Cursor, Grok Bot and Grok Build to the 
 
 Three tools work right away. For the rest, the first call opens your browser to sign in to Signatoro. There is no API key to paste.
 
-To have an agent sign every email, add the [email signature rule](https://signatoro.com/docs/install-signature/agent#tell-your-agent-to-use-your-signature) to its instructions.
+In Claude Code and Claude, the plugin's `email-signature` skill signs the emails Claude writes for you with your saved signature, so there is nothing to add to your instructions. For other agents, add the [email signature rule](https://signatoro.com/docs/install-signature/agent#tell-your-agent-to-use-your-signature) to their instructions.
 
 ## Tools
 
@@ -47,6 +47,10 @@ Company owners:
 - `update_member_field` - change a member's details
 - `remove_member` - remove a member, after you confirm
 - `resend_invite` - send an invite again
+
+## Skill
+
+- `email-signature` - when Claude sends, replies to, forwards or drafts an email for you, it fetches your saved signature and appends it after the body, with your real contact details. Tell Claude when an email should go unsigned.
 
 ## What it connects to
 
